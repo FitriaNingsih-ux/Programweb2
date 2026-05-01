@@ -1,0 +1,16 @@
+<?php
+// Array Numerik
+$a[0] = 1;
+$a[1] = 3;
+$a[2] = 5;
+$jumlah = count($a); 
+print "Jumlah array a = $jumlah <br>"; // Output: Jumlah array a = 3
+
+// Array Asosiatif
+$b["buah"] = "semangka";
+$b["sayur"] = "wortel";
+$b["daging"] = "ayam";
+$b["utama"] = "nasi";
+$jumlah = sizeof($b);
+print "Jumlah array b = $jumlah <br>"; // Output: Jumlah array b = 4
+?>
