@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Data Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 600px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #f39c12; /* Warna orange keemasan sesuai judul */
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            width: 180px; /* Menyelaraskan posisi kotak input */
+            font-size: 0.95rem;
+            color: #000000;
+        }
+
+        /* Styling dasar untuk input text dan select */
+        .form-group input[type="text"],
+        .form-group select {
+            border: 1px solid #cccccc;
+            border-radius: 2px;
+            padding: 6px 8px;
+            font-size: 0.95rem;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        /* Mengatur panjang masing-masing input sesuai gambar */
+        #nim {
+            width: 250px;
+        }
+
+        #nama {
+            width: 350px;
+        }
+
+        #jurusan {
+            width: 160px;
+        }
+
+        #alamat {
+            width: 350px;
+        }
+
+        #no_telp {
+            width: 160px;
+        }
+
+        /* Bagian tombol */
+        .button-group {
+            margin-top: 40px;
+            padding-left: 180px; /* Agar tombol sejajar dengan kotak input */
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 5px 15px;
+            font-size: 0.9rem;
+            border: 1px solid #a3a3a3;
+            border-radius: 3px;
+            background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+            cursor: pointer;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #f2f2f2, #d9d9d9);
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Form Input Data Mahasiswa</h2>
+    
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="nim">ID Mahasiswa / NIM</label>
+            <input type="text" id="nim" name="nim">
+        </div>
+
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama">
+        </div>
+
+        <div class="form-group">
+            <label for="jurusan">Jurusan</label>
+            <select id="jurusan" name="jurusan">
+                <option value="">- Pilih Jurusan -</option>
+                <option value="TI">Teknik Informatika</option>
+                <option value="SI">Sistem Informasi</option>
+                <option value="TK">Teknik Komputer</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input type="text" id="alamat" name="alamat">
+        </div>
+
+        <div class="form-group">
+            <label for="no_telp">No. Telp</label>
+            <input type="text" id="no_telp" name="no_telp">
+        </div>
+
+        <div class="button-group">
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn">Cancel</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
